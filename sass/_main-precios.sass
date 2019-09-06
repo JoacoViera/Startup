@@ -1,0 +1,78 @@
+.main
+    .precios
+        background: url(../img/precios-bg.jpg), #727171
+        background-size: cover
+        background-position: center 0
+        background-repeat: no-repeat
+        padding: 70px 0
+        .titulo
+            text-align: center
+            font-family: "Open Sans",Arial, Helvetica, sans-serif
+            font-weight: 700
+            font-size: 32px
+            color: #ffffff
+            margin-bottom: 70px
+        .plan
+            background: #fff
+            text-align: center
+            font-family: "Open Sans",Arial, Helvetica, sans-serif
+            padding: 50px 0
+            -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35)
+            box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35)
+            .nombre
+                font-size: 32px
+                line-height: 32px
+                font-weight: 700
+                margin-bottom: 30
+            .precio
+                font-weight: 300
+                font-size: 48px
+                margin-bottom: 30px
+            &:hover
+                background: #4c8dce
+                color: #fff
+
+            .caracteristicas
+                list-style: none
+                padding: 0 20px
+                margin-bottom: 50px
+                li
+                    font-size: 18px
+                    padding: 15px 0
+                    border-bottom: 1px solid #dedede
+            .btn
+                width: 70%
+                padding: 15px 0
+                text-align: center
+                display: inline-block
+                border-radius: 100px
+            &.verde
+                .nombre,
+                .precio
+                    color: #86b773
+                .btn
+                    color: #86b773
+                    border: 2px solid #86b773
+                    &:hover
+                        background: #86b773
+                        color: #ffffff
+            &.marron
+                .nombre,
+                .precio
+                    color: #b5690e
+                .btn
+                    color: #b5690e
+                    border: 2px solid #b5690e
+                    &:hover
+                        background: #b5690e
+                        color: #ffffff
+            &.naranja
+                .nombre,
+                .precio
+                    color: #ddb146
+                .btn
+                    color: #ddb146
+                    border: 2px solid #ddb146
+                    &:hover
+                        background: #ddb146
+                        color: #ffffff

@@ -9,7 +9,7 @@ body {
 }
 
 header {
-  background: url(../img/bg.jpg), #019851;
+  background: url(../img/bg.jpg), #fff;
   background-size: cover;
   background-position: center 0;
   background-repeat: no-repeat;
@@ -35,30 +35,28 @@ header .contenedor_logo_menu .menu {
 }
 
 header .contenedor_logo_menu .menu a {
-  color: #fff;
+  color: #ffff;
   margin-left: 60px;
-  font-size: 18px;
+  font-size: 25px;
 }
 
 header .textos {
-  color: #fff;
+  color: #f3f3f3;
   text-align: center;
   padding: 200px 0;
 }
 
-header .textos .primera_linea,
-header .textos .segunda_linea {
-  font-family: "Open Sans", Arial, Sans-serif;
-  font-weight: 300;
-}
-
 header .textos .primera_linea {
+  font-family: "Open Sans", Arial, Sans-serif;
+  font-weight: 700;
   font-size: 35px;
   line-height: 35px;
   margin-bottom: 30px;
 }
 
 header .textos .segundo_linea {
+  font-family: "Open Sans", Arial, Sans-serif;
+  font-weight: 300;
   font-size: 25px;
   line-height: 25px;
   margin-bottom: 60px;
@@ -66,19 +64,19 @@ header .textos .segundo_linea {
 
 header .textos .contenedor-btns a {
   border-radius: 4px;
-  border: 2px solid #ffffff;
-  color: #ffffff;
+  border: 2px solid #f3f3f3;
+  color: #f3f3f3;
   padding: 12px 0;
-  font-weight: 600;
+  font-weight: 700;
   width: 235px;
   display: inline-block;
   text-align: center;
-  margin: 0 10px;
+  margin: 20px 10px;
 }
 
 header .textos .contenedor-btns a:hover {
   text-decoration: none;
-  background: #ffffff;
+  background: #fff;
   color: #4f4f4f;
 }
 
@@ -89,7 +87,7 @@ header .textos .contenedor-btns a:hover {
 .main .caracteristicas .titulo {
   text-align: center;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  font-weight: 300;
+  font-weight: 700;
   font-size: 32px;
   color: #000;
   margin-bottom: 70px;
@@ -97,6 +95,19 @@ header .textos .contenedor-btns a:hover {
 
 .main .caracteristicas .caracteristica {
   text-align: center;
+}
+
+.main .caracteristicas .caracteristica a {
+  display: block;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  border-radius: 100px;
+}
+
+.main .caracteristicas .caracteristica a:hover {
+  -webkit-animation: movimiento 1.5s ease;
+          animation: movimiento 1.5s ease;
 }
 
 .main .caracteristicas .caracteristica .icono {
@@ -134,7 +145,7 @@ header .textos .contenedor-btns a:hover {
   margin-bottom: 40px;
   font-size: 32px;
   line-height: 32px;
-  font-weight: 300;
+  font-weight: 600;
 }
 
 .main .fotos .foto .tituloFoto.azul {
@@ -153,6 +164,28 @@ header .textos .contenedor-btns a:hover {
   text-align: right;
 }
 
+@-webkit-keyframes movimiento {
+  from {
+    -webkit-transform: rotate3d(0, 0, 0, 0);
+            transform: rotate3d(0, 0, 0, 0);
+  }
+  to {
+    -webkit-transform: rotate3d(0, 1, 0, 360deg);
+            transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
+
+@keyframes movimiento {
+  from {
+    -webkit-transform: rotate3d(0, 0, 0, 0);
+            transform: rotate3d(0, 0, 0, 0);
+  }
+  to {
+    -webkit-transform: rotate3d(0, 1, 0, 360deg);
+            transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
+
 .main .clientes {
   background: #2d353e;
   padding: 40px 0;
@@ -161,7 +194,7 @@ header .textos .contenedor-btns a:hover {
 .main .clientes .titulo {
   text-align: center;
   font-family: "Open Sans",Arial, Helvetica, sans-serif;
-  font-weight: 300;
+  font-weight: 700;
   font-size: 32px;
   color: #ffffff;
   margin-bottom: 40px;
@@ -186,7 +219,7 @@ header .textos .contenedor-btns a:hover {
 .main .precios .titulo {
   text-align: center;
   font-family: "Open Sans",Arial, Helvetica, sans-serif;
-  font-weight: 300;
+  font-weight: 700;
   font-size: 32px;
   color: #ffffff;
   margin-bottom: 70px;
@@ -204,7 +237,7 @@ header .textos .contenedor-btns a:hover {
 .main .precios .plan .nombre {
   font-size: 32px;
   line-height: 32px;
-  font-weight: 300;
+  font-weight: 700;
   margin-bottom: 30;
 }
 
@@ -212,6 +245,11 @@ header .textos .contenedor-btns a:hover {
   font-weight: 300;
   font-size: 48px;
   margin-bottom: 30px;
+}
+
+.main .precios .plan:hover {
+  background: #4c8dce;
+  color: #fff;
 }
 
 .main .precios .plan .caracteristicas {
@@ -249,19 +287,19 @@ header .textos .contenedor-btns a:hover {
   color: #ffffff;
 }
 
-.main .precios .plan.active {
-  background: #4c8dce;
-  color: #ffffff;
+.main .precios .plan.marron .nombre,
+.main .precios .plan.marron .precio {
+  color: #b5690e;
 }
 
-.main .precios .plan.active .btn {
-  color: #ffffff;
-  border: 2px solid #ffffff;
+.main .precios .plan.marron .btn {
+  color: #b5690e;
+  border: 2px solid #b5690e;
 }
 
-.main .precios .plan.active .btn:hover {
-  background: #ffffff;
-  color: #4c8dce;
+.main .precios .plan.marron .btn:hover {
+  background: #b5690e;
+  color: #ffffff;
 }
 
 .main .precios .plan.naranja .nombre,
@@ -286,7 +324,7 @@ header .textos .contenedor-btns a:hover {
 .main .reviews .titulo {
   text-align: center;
   font-family: "Open Sans",Arial, Helvetica, sans-serif;
-  font-weight: 300;
+  font-weight: 700;
   font-size: 32px;
   color: #4facd3;
   margin-bottom: 70px;
@@ -347,7 +385,7 @@ footer .direccion {
 footer .direccion .titulo {
   font-size: 32px;
   line-height: 32px;
-  font-weight: 300;
+  font-weight: 700;
   margin-bottom: 30px;
 }
 
@@ -355,6 +393,18 @@ footer .direccion .titulo .calle,
 footer .direccion .titulo .telefono,
 footer .direccion .titulo .correo {
   margin-bottom: 10px;
+}
+
+footer .direccion .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer .direccion img {
@@ -366,34 +416,88 @@ footer .social {
   padding: 20px 0;
 }
 
-footer .social a {
+footer .social .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+footer .social .row .icono {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .social .row .icono a {
   padding: 10px;
-  display: inline-block;
-  margin: 0 20px;
   width: 50px;
   font-size: 22px;
   color: #ffffff;
   background: #000000;
   border-radius: 100px;
+  display: block;
+  height: auto;
+  text-align: center;
 }
 
-footer .social a.hover {
-  text-decoration: none;
-}
-
-footer .social a.facebook {
+footer .social .row .icono a.facebook {
   background: #3b5998;
 }
 
-footer .social a.twitter {
+footer .social .row .icono a.twitter {
   background: #55acee;
 }
 
-footer .social a.youtube {
+footer .social .row .icono a.youtube {
   background: #cd201f;
 }
 
+footer .social .row .icono a:hover {
+  -webkit-animation: movimiento 0.5s ease;
+          animation: movimiento 0.5s ease;
+}
+
+@keyframes movimiento {
+  from {
+    -webkit-transform: rotate3d(0, 0, 0, 0);
+            transform: rotate3d(0, 0, 0, 0);
+  }
+  to {
+    -webkit-transform: rotate3d(0, 1, 0, 360deg);
+            transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
+
 @media screen and (max-width: 992px) {
+  header .contenedor_logo_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   header .contenedor_logo_menu .logo {
     margin-bottom: 20px;
     text-align: center;
@@ -402,12 +506,24 @@ footer .social a.youtube {
   }
   header .contenedor_logo_menu .menu {
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   header .contenedor_logo_menu .menu .a {
     margin-bottom: 0 20px;
+    margin-left: 0;
+    margin-left: 0;
   }
   header .textos {
     margin: 50px 0;
+    padding: 0 0;
     font-size: 16px;
   }
   header .textos .primera_linea {
@@ -432,6 +548,17 @@ footer .social a.youtube {
     text-align: center;
     margin-left: 20px;
     margin-right: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  header .contenedor_logo_menu .menu a {
+    margin: 0 20px;
+  }
+  header .textos .contenedor-btns a {
+    margin: 5px 10px;
   }
   .main .caracteristicas .caracteristica {
     margin-bottom: 40px;
@@ -449,7 +576,18 @@ footer .social a.youtube {
     text-align: center;
   }
   footer .direccion .logo img {
-    margin-top: 20px;
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  header .contenedor_logo_menu .menu {
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  footer .social .icono {
+    margin: 0 5px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

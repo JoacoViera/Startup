@@ -6,32 +6,56 @@ footer
         .titulo
             font-size: 32px
             line-height: 32px
-            font-weight: 300
+            font-weight: 700
             margin-bottom: 30px
             .calle,
             .telefono,
             .correo
                 margin-bottom: 10px
+        .logo
+            display: flex
+            justify-content: center
+            align-items: center
         img
             border-radius: 100%
     .social
         text-align: center
         padding: 20px 0
-        a
-            padding: 10px
-            display: inline-block
-            margin: 0 20px
-            width: 50px
-            font-size: 22px
-            color: #ffffff
-            background: #000000
-            border-radius: 100px
-            &.hover
-                text-decoration: none
-            &.facebook
-                background: #3b5998
-            &.twitter
-                background: #55acee
-            &.youtube
-                background: #cd201f
-                 
+        .row
+            display: flex
+            justify-content: center
+            align-items: center
+            align-content: center
+            .icono
+                display: flex
+                justify-content: center
+                align-items: center
+                align-content: center
+                flex-wrap: wrap
+                a
+                    padding: 10px
+                    width: 50px
+                    font-size: 22px
+                    color: #ffffff
+                    background: #000000
+                    border-radius: 100px
+                    display: block
+                    height: auto
+                    text-align: center
+                    // transition: .5s ease all
+
+                    &.facebook
+                        background: #3b5998
+                    &.twitter
+                        background: #55acee
+                    &.youtube
+                        background: #cd201f
+                    &:hover
+                        animation: movimiento 0.5s ease
+
+@keyframes movimiento
+  from
+    transform: rotate3d(0, 0, 0, 0)
+
+  to
+    transform: rotate3d(0, 1, 0, 360deg)

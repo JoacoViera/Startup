@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600i,700" rel="stylesheet">
 
     <link rel="stylesheet" href="sass/styles.css">
-    <link rel="stylesheet" href="css/tarjetas.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
 
@@ -29,7 +28,7 @@
                 <div class="logo col-xs-12 col-md-6">
                     <a href="#"><img src="img/logoJV.jpg" alt=""></a>
                 </div>
-                <div class="menu col-xs-12 col-md-6">
+                <div class="menu col-xs-12 col-md-6 col-lg-6">
                     <a href="#inicio">Inicio</a>
                     <a href="#precios">Precio</a>
                     <a href="#contacto">Contacto</a>
@@ -38,11 +37,11 @@
 
             <div class="row textos">
                 <div class="col-md-12">
-                    <h2 class="primera_linea">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
+                    <h2 class="primera_linea">Lorem ipsum dolor sit amet, consectetur adipisicing</h2>
                     <h3 class="segunda_linea">Duis aute irure dolor in reprehenderit</h3>
                     <div class="contenedor-btns">
-                        <a href="#">Caracteristicas</a>
-                        <a href="#">Comprar Ahora</a>
+                        <a href="#caracteristicas">Caracteristicas</a>
+                        <a href="#precios">Comprar Ahora</a>
                     </div>
                 </div>
             </div>
@@ -53,7 +52,7 @@
         <section class="caracteristicas">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12" id="caracteristicas">
                         <h3 class="titulo">Caracteristicas</h3>
                     </div>
                 </div>
@@ -61,7 +60,7 @@
                 <div class="row">
                     <div class="col-sm-4 caracteristica">
                             <a href="https://docs.google.com" target="_blank">
-                                    <img src="img/icono1.png" alt="" class="icono">
+                                <img src="img/icono1.png" alt="" class="icono">
                             </a>
                         <h4 class="primera_linea">Lorem Ipsum</h4>
                         <p class="parrafo">Dolor sit amet, consectetur adipiscing elit. In dignissim odio ut sagittis
@@ -69,14 +68,14 @@
                     </div>
                     <div class="col-sm-4 caracteristica">
                             <a href="https://docs.google.com" target="_blank">
-                                    <img src="img/icono2.png" alt="" class="icono">
+                                <img src="img/icono2.png" alt="" class="icono">
                             </a>
                         <h4 class="primera_linea">Aenean rhoncus augue</h4>
                         <p class="parrafo">Curabitur nisi enim, placerat ac convallis id, posuere vehicula ligula.</p>
                     </div>
                     <div class="col-sm-4 caracteristica">
                             <a href="https://docs.google.com" target="_blank">
-                                    <img src="img/icono3.png" alt="" class="icono">
+                                <img src="img/icono3.png" alt="" class="icono">
                             </a>
                         <h4 class="primera_linea">Praesent</h4>
                         <p class="parrafo">Nulla diam mi, pharetra eget mattis sed, mollis non ligula.</p>
@@ -130,16 +129,24 @@
 
                 <div class="row">
                     <div class="cliente col-xs-6 col-md-3">
-                        <a href="https://www.facebook.com" target="_blank"><img src="img/cliente1.png" alt=""></a>
+                        <a href="https://www.spotify.com/" target="_blank">
+                            <img src="img/cliente1.ico" alt="">
+                        </a>
                     </div>
                     <div class="cliente col-xs-6 col-md-3">
-                        <a href="https://www.twitter.com" target="_blank"><img src="img/cliente2.png" alt=""></a>
+                        <a href="https://soundcloud.com/" target="_blank">
+                            <img src="img/cliente2.ico" alt="">
+                        </a>
                     </div>
                     <div class="cliente col-xs-6 col-md-3">
-                        <a href="https://www.instagra.com" target="_blank"><img src="img/cliente3.png" alt=""></a>
+                        <a href="https://elpais.com/" target="_blank">
+                            <img src="img/cliente3.ico" alt="">
+                        </a>
                     </div>
                     <div class="cliente col-xs-6 col-md-3">
-                        <a href="https://www.youtube.com" target="_blank"><img src="img/cliente4.png" alt=""></a>
+                        <a href="https://www.dropbox.com/" target="_blank">
+                            <img src="img/cliente4.ico" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -168,7 +175,7 @@
                     </div>
 
                     <div class="precio col-sm-4">
-                        <div class="plan active">
+                        <div class="plan naranja">
                             <p class="nombre">Standard</p>
                             <p class="precio">$19</p>
                             <ul class="caracteristicas">
@@ -181,11 +188,11 @@
                     </div>
 
                     <div class="precio col-sm-4">
-                        <div class="plan naranja">
+                        <div class="plan marron">
                             <p class="nombre">Premium</p>
                             <p class="precio">$99</p>
                             <ul class="caracteristicas">
-                                <li>Cuentas Ilimitadas</li>
+                                <li>Ilimitadas</li>
                                 <li>500 GB de espacio</li>
                                 <li>Dominios Ilimitados</li>
                             </ul>
@@ -219,7 +226,7 @@
                             <img src="img/clienteFoto2.jpg" alt="">
                         </div>
                         <div class="review">
-                            <p class="texto">"Its fine"</p>
+                            <p class="texto">"Easy and practical"</p>
                             <p class="nombre">- Customer n2</p>
                         </div>
 
@@ -234,8 +241,8 @@
         <div class="direccion">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8">
-                        <h4 class="titulo" id="contacto">Contacto</h4>
+                    <div class="col-md-8" id="contacto">
+                        <h4 class="titulo">Contacto</h4>
                         <p class="calle"> 857 Delaware Avenue <br />Aguada Park, NY 11750</p>
                         <p class="correo">correo [arroba] correo.com</p>
                     </div>
@@ -245,19 +252,20 @@
                 </div>
             </div>
         </div>
+
         <div class="social">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 iconoRed">
+                    <div class="col-3 icono facebook">
                         <a href="https://www.facebook.com" class="facebook" target="_blank"><i
                         class="fab fa-facebook"></i></i></a>                
                     </div>
 
-                    <div class="col-md-4 iconoRed">
+                    <div class="col-3 icono twitter">
                         <a href="https://www.twitter.com" class="twitter" target="_blank"><i
                         class="fab fa-twitter"></i></a>
                     </div>
-                    <div class="col-md-4 iconoRed">
+                    <div class="col-3 icono youtube">
                         <a href="https://www.youtube.com" class="youtube" target="_blank"><i
                         class="fab fa-youtube"></i></a>
                     </div>
