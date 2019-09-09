@@ -1,4 +1,4 @@
-# STARTUP WEBPAGE
+# Startup webpage
 
 Startup webpage done with Bootstrap 4
 
