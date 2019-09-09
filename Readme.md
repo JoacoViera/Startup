@@ -1,8 +1,12 @@
+
 # Startuo web page 💻 [![saythanks](https://img.shields.io/badge/say-thanks-ff69b4.svg)](https://saythanks.io/to/JoacoViera)
+
+# Startup webpage
 
 Startup webpage done with Bootstrap 4
 
 I also add hover effects and animations
+
 
 ![alt text](img/example.png)
 
